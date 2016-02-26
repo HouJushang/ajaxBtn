@@ -2,8 +2,11 @@
 防止ajax多次提交
 ## 运行demo 分别执行以下命令
 ``git clone https://github.com/HouJushang/ajaxBtn.git``
+
 ``cd ajaxBtn``
+
 ``npm install``
+
 ``gulp``
 #### 如果gulp运行报错,则缺少依赖环境,可直接点击dist或src下的index.html直接运行demo
 ## 线上地址
