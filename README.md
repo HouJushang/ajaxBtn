@@ -1,6 +1,6 @@
 # ajaxBtn
 防止ajax多次提交
-``
+```
 $('.btn').ajaxBtn({
           activeFont: 'ajax发送咯!',
           activeClass: 'active',
@@ -13,4 +13,4 @@ $('.btn').ajaxBtn({
               },3000)
           }
       })
-``
+```
