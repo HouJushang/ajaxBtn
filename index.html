@@ -3,8 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        .btn{
+            width :100px;
+            height: 30px;
+            background: goldenrod;
+            line-height: 30px;
+            text-align: center;
+        }
+        .active{
+            background: #ccc;
+            color: #9A9A9A;
+        }
+    </style>
 </head>
 <body>
-
+    <div class="btn">
+        点击我
+    </div>
 </body>
+<script src="//cdn.bootcss.com/jquery/1.12.1/jquery.js"></script>
+<script src="js/jquery-ajaxBtn.js"></script>
+<script>
+    $('.btn').ajaxBtn({
+        activeFont: 'ajax发送咯!',
+        activeClass: 'active',
+        fn: function(init){
+            //在这里执行ajax操作
+            //init恢复按钮 init()
+            alert('我执行ajax操作喽!');
+            setTimeout(function(){
+                init();
+            },3000)
+        }
+    })
+</script>
 </html>
