@@ -4,37 +4,38 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
-        .btn{
-            width :100px;
+        .btn {
+            width: 100px;
             height: 30px;
             background: goldenrod;
             line-height: 30px;
             text-align: center;
         }
-        .active{
+
+        .active {
             background: #ccc;
             color: #9A9A9A;
         }
     </style>
 </head>
 <body>
-    <div class="btn">
-        来点击我
-    </div>
+<div class="btn">
+    来点击我
+</div>
 </body>
 <script src="//cdn.bootcss.com/jquery/1.12.1/jquery.js"></script>
 <script src="js/jquery-ajaxBtn.js"></script>
 <script>
     $('.btn').ajaxBtn({
-        activeFont: 'ajax发送咯!',
-        activeClass: 'active',
-        fn: function(init){
+        activeFont: 'ajax发送咯!', //default:操作中...
+        activeClass: 'active',//执行ajax时候的class,可以增加不可点击时候的样式! default: ajaxBtn-active
+        fn: function (init) { //必传参数 ajax执行完毕调用init() 恢复按钮状态
             //在这里执行ajax操作
             //init恢复按钮 init()
             alert('我执行ajax操作喽!');
-            setTimeout(function(){
+            setTimeout(function () {
                 init();
-            },3000)
+            }, 3000)
         }
     })
 </script>
