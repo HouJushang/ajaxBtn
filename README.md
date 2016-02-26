@@ -5,7 +5,9 @@
 ``cd ajaxBtn``
 ``npm install``
 ``gulp``
-### 如果gulp运行报错,则缺少依赖环境,可直接点击dist或src下的index.html直接运行demo
+#### 如果gulp运行报错,则缺少依赖环境,可直接点击dist或src下的index.html直接运行demo
+## 线上地址
+[This link](http://www.41js.com/demo/ajaxBtn/)
 ## ajaxBtn.js文件
 压缩版 dist/js/jquery-ajaxBtn.js
 非压缩版 src/js/jquery-ajaxBtn.js
