@@ -7,7 +7,7 @@
             'activeFont':'操作中...',
             'activeClass': 'ajaxBtn-active',
             'fn': function (init) {
-                alert('fn参数不能为空')
+                alert('fn参数不能为空');
             }
         }, parms);
         var _this = $(this);
