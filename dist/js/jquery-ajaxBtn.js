@@ -1,0 +1,1 @@
+!function(t){t.fn.ajaxBtn=function(n){function a(){s.removeClass(i.activeClass),s.text(c)}function e(){s.text(i.activeFont),s.addClass(i.activeClass)}var i=t.extend({activeFont:"操作中...",activeClass:"ajaxBtn-active",fn:function(t){alert("fn参数不能为空")}},n),s=t(this),c=s.text();s.bind("click",function(){return s.hasClass(i.activeClass)?!1:(e(),void i.fn(a))})}}(jQuery);
